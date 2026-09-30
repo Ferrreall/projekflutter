@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+
+class Lat2 extends StatelessWidget {
+  const Lat2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        width: 400,
+        height: 200,
+        margin: EdgeInsets.all(30),
+        padding: EdgeInsets.all(10),
+        alignment: Alignment.topCenter,
+        decoration: BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.circular(15),
+              border: Border.all(color: Colors.grey, width: 2.0),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('Nama: Soi Fon', style: TextStyle(color: Colors.white),),
+                Text('NIS: 33550335', style: TextStyle(color: Colors.white),),
+                Text('Divisi: 6', style: TextStyle(color: Colors.white),),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                    image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkE8I2mMezl-pIjT1tQRQw4XfWNRPiVHKxOGWwJmwMg&s=10"
+                    ),
+                    fit: BoxFit.fill,
+                    ),
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(color: Colors.grey, width: 2.0)
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
