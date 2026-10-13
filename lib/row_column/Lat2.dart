@@ -5,7 +5,9 @@ class Lat2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Scaffold( 
+      appBar: AppBar(),
+      body:Center(
       child: Container(
         width: 400,
         height: 200,
@@ -49,6 +51,7 @@ class Lat2 extends StatelessWidget {
           ],
         ),
       ),
+    ),
     );
   }
 }

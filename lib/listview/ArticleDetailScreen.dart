@@ -6,7 +6,9 @@ class ArticleDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Scaffold(
+      appBar: AppBar(title: Text("Detail Page"),),
+      body: Center(
       child: Column(
         children: [
           const SizedBox(height: 20,),
@@ -17,6 +19,7 @@ class ArticleDetailScreen extends StatelessWidget {
           Text(data['price']!, style: TextStyle(fontSize: 16, color: Colors.black),)
         ],
       ),
+    ),
     );
   }
 }

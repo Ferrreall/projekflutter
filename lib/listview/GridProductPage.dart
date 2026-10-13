@@ -28,7 +28,9 @@ class GridProductPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Scaffold( 
+      appBar: AppBar(title: Text('Grid List Page'),),
+      body:Padding(
       padding: const EdgeInsets.all(10),
       child: GridView.builder(
         itemCount: products.length,
@@ -91,6 +93,7 @@ class GridProductPage extends StatelessWidget {
           );
         }
         ),
+    ),
     );
   }
 }

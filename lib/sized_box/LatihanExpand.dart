@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-class PExpand extends StatelessWidget {
-  const PExpand({super.key});
+class LatihanExpand extends StatelessWidget {
+  const LatihanExpand({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Scaffold(
+    appBar: AppBar(),
+    body:Center(
       child: Row(
         children: [
           // Container(width: 50, color: Colors.yellow),
@@ -57,6 +59,7 @@ class PExpand extends StatelessWidget {
             SizedBox(width: 5,),
         ],
       ),
+    ),
     );
   }
 }

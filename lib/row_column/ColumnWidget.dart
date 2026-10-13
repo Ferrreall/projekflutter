@@ -5,7 +5,9 @@ class ColumnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Scaffold(
+    appBar: AppBar(),
+    body: Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Text('Isi Column 1'),
@@ -20,6 +22,7 @@ class ColumnWidget extends StatelessWidget {
           ],
         )
       ],
+    ),
     );
   }
 }

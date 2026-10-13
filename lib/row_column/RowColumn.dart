@@ -5,7 +5,9 @@ class RowColumnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Scaffold(
+    appBar: AppBar(),
+    body:Center(
       child: Center(
         child: Container(
           width: double.infinity,
@@ -35,6 +37,7 @@ class RowColumnWidget extends StatelessWidget {
             ],),
         ),
       ),
+    ),
     );
   }
 }

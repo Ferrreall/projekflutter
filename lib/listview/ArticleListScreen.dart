@@ -29,7 +29,9 @@ class ArticleListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return Scaffold(
+    appBar: AppBar(title: Text('List Page'),),
+    body: ListView.builder(
       itemCount: articles.length,
       itemBuilder: (context, index) {
         final article = articles[index];
@@ -97,6 +99,7 @@ class ArticleListScreen extends StatelessWidget {
           ),
         );
       },
+    ),
     );
   }
 }
